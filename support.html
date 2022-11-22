@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <title>Yukkuri Web Read</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./image/logo_image.png" alt="">
+            <img src="./image/logo_text.png" alt="">
+        </a>
+    </header>
+
+    <div class="main_box">
+        <main>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDK1xxxEEhP6gxGKEmr-seZt1GoeZi2Kz4Eq7r2u9KWS1xDQ/viewform?embedded=true" style="width: 100%; height: 75vh;" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </main>
+    </div>
+    <p id="back">&lt;もどる</p>
+
+    <script src="./js/jquery.js"></script>
+    <script>
+        $("#back").on("click", function(){
+            history.back();
+        });
+    </script>
+</body>
+
+</html>
