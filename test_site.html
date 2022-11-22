@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <title>Yukkuri Web Read</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./image/logo_image.png" alt="">
+            <img src="./image/logo_text.png" alt="">
+        </a>
+    </header>
+
+    <div class="main_box">
+        <main>
+            <h1>これはテストです</h1>
+            <p>yukkuri web read を是非お使いください！</p>
+        </main>
+    </div>
+    <p id="back">&lt;もどる</p>
+
+    <script src="./js/jquery.js"></script>
+    <script>
+        $("#back").on("click", function(){
+            history.back();
+        });
+    </script>
+</body>
+
+</html>

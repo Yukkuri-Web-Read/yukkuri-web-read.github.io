@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <title>Yukkuri Web Read</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./image/logo_image.png" alt="">
+            <img src="./image/logo_text.png" alt="">
+        </a>
+    </header>
+
+    <div class="main_box">
+        <main>
+            <h1>Yukkuri Web Read</h1>
+
+            <p>Yukkuri Web Readとは何ですか?</p>
+            <div class="answer">
+                <div class="answer_border"></div>
+                <div style="width: 100%;">
+                    Webページをゆっくりボイスで読み上げるChrome拡張機能です。
+                    <img src="./image/extension_page_image.png" alt="">
+                </div>
+            </div>
+
+            <p>Yukkuri Web ReadはどのようにChromeに追加しますか?</p>
+            <div class="answer">
+                <div class="answer_border"></div>
+                <div style="width: 100%;">
+                    <a href="">chromeウェブストアのYukkuri Web Readのページ</a>から拡張機能をダウンロードします。
+                    <img src="./image/extension_page_image.png" alt="">
+                </div>
+            </div>
+            <p>Yukkuri Web Readはどのように使用しますか?</p>
+            <div class="answer">
+                <div class="answer_border"></div>
+                <div style="width: 100%;">
+                    <ol>
+                        <li>
+                            <span style="display: flex;">導入すると、Webページの右下に<img src="./image/extension_mark.png" style="width:3em;transform: translateY(-0.75em);" alt="">が表示されます</span>
+                            <img src="./image/extension_use_before.png" alt=""><br>
+                            それをクリックすると、<br>
+                            <img src="./image/extension_use_after.png" alt=""><br>
+                            このようなコントロールパネルが表示されます。
+                            <div class="point_box">
+                                <h2>コントロールパネルの使い方</h2>
+                                <h3>ボイス</h3>
+                                <p>ゆっくりボイスの種類を選択します。
+                                種類:女性1,女性2 </p>
+                                <div class="img_filter">
+                                    <img src="./image/filter0.svg" alt="">
+                                </div>
+                                <hr>
+                                <h3>スピード</h3>
+                                <p>読み上げのスピードを設定します。</p>
+                                <div class="img_filter">
+                                    <img src="./image/filter1.svg" alt="">
+                                </div>
+                                <hr>
+                                <h3>音量</h3>
+                                <p>音量をドラッグ&ドロップまたはクリックして設定できます。</p>
+                                <div class="img_filter">
+                                    <img src="./image/filter2.svg" alt="">
+                                </div>
+                                <hr>
+                                <h3>停止</h3>
+                                <p>再生をストップして、再生位置を0にします。</p>
+                                <div class="img_filter">
+                                    <img src="./image/filter3.svg" alt="">
+                                </div>
+                                <p>再生をストップして、再生位置を0にします。</p>
+                                <hr>
+                                <h3>再生 / 停止</h3>
+                                <p>クリックで再生,停止を切り替えます。</p>
+                                <p>停止状態</p>
+                                <div class="img_filter">
+                                    <img src="./image/filter4.svg" alt="">
+                                </div>
+                                <p>再生状態</p>
+                                <div class="img_filter" style="background-image: url(./image/controlpanel_start.png);margin-top: 1vh;">
+                                    <img src="./image/filter4.svg" alt="">
+                                </div>
+                                <hr>
+                                <h3>マイナススキップ</h3>
+                                <p>再生位置を10秒前に移動させます。</p>
+                                <div class="img_filter">
+                                    <img src="./image/filter5.svg" alt="">
+                                </div>
+                                <hr>
+                                <h3>スキップ</h3>
+                                <p>再生位置を10秒後に移動させます。</p>
+                                <div class="img_filter">
+                                    <img src="./image/filter6.svg" alt="">
+                                </div>
+                                <hr>
+                                <h3>再生バー</h3>
+                                <p>ドラッグ&ドロップまたはクリックで、再生位置を変更します。</p>
+                                <div class="img_filter">
+                                    <img src="./image/filter7.svg" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li style="transform: translateY(0.75em);">
+                            コントロールパネルは、サイトをリロードすることで非表示にすることができます。
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <p>Yukkuri Web Readはどのようにゆっくりボイスを生成しますか?</p>
+            <div class="answer">
+                <div class="answer_border"></div>
+                <div style="width: 100%;">
+                    <p>サーバーにサイトのテキストを送信し、生成します。
+                    生成された音声ファイルは、約10分以内に削除されます。
+                    生成されたファイルが、他の目的で使用されることはありません。
+                    また、送信されたテキストを収集することはありません。</p>
+                </div>
+            </div>
+            <a href="./test_site.html">
+                <div class="try_button">
+                    Yukkuri Web Read を試す
+                </div>
+            </a>
+        </main>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script>
+        let main_p_element = $("main p");
+        let br = "<br>";
+
+        $.each(main_p_element, function () {
+            main_p = $(this).html();
+            main_p = main_p.replace(/\n/g, br);
+            $(this).html(main_p);
+        })
+    </script>
+</body>
+</html>
