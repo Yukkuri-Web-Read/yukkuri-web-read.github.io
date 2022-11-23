@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MOBO";
-    src: url("../font/MOBO.otf") format("otf");
+    src: url("../font/MOBO.otf");
 }
 
 html {
